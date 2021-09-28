@@ -20,7 +20,7 @@
             <input type="text" name="image" [(ngModel)]="product.image" placeholder="URL Image" class="form-control mb-3">
         </div>
 
-        <img [src]="product.image == '' ? '/assets/no-image.png' : product.image" class="card-img-top" onError="this.src='/assets/no-image.png'">
+        <img [src]="product.image == '' ? './assets/no-image.png' : product.image" class="card-img-top" onError="this.src='./assets/no-image.png'">
 
         <button type="submit" class="btn btn-dark btn-block mt-3">
             Save
